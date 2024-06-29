@@ -3,15 +3,17 @@ import './App.css';
 import AddRecipe from './components/AddRecipe';
 import SearchRecipe from './components/SearchRecipe';
 import ViewAllRecipe from './components/ViewAllRecipe';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-     
-    <AddRecipe/>
-    <SearchRecipe/>
-    <ViewAllRecipe/>
-    </div>
+    <BrowserRouter>
+    <Routes>
+      <Route path='/' element={<AddRecipe/>}/>
+      <Route path='/search' element={<SearchRecipe/>}/>
+      <Route path='viewall' element={<ViewAllRecipe/>}/>
+    </Routes>
+    </BrowserRouter>
   );
 }
 

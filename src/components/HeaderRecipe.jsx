@@ -12,13 +12,13 @@ const HeaderRecipe = () => {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Add Recipe</a>
+          <a class="nav-link active" aria-current="page" href="/">Add Recipe</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Search Recipe</a>
+          <a class="nav-link" href="/search">Search Recipe</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">View All Recipe</a>
+          <a class="nav-link" href="/viewall">View All Recipe</a>
         </li>
       </ul>
     </div>
